@@ -25,12 +25,12 @@ public class SimpleDialogFragment extends Fragment {
 		        builder.setMessage(R.string.dialog_eat)
 		               .setPositiveButton(R.string.ok, new DialogInterface.OnClickListener() {
 		                   public void onClick(DialogInterface dialog, int id) {
-		                       Toast.makeText(getActivity(), "Let's eat some vegetables.", Toast.LENGTH_SHORT).show();
+		                       Toast.makeText(getActivity(), R.string.lets_eat , Toast.LENGTH_SHORT).show();
 		                   }
 		               })
 		               .setNegativeButton(R.string.cancel, new DialogInterface.OnClickListener() {
 		                   public void onClick(DialogInterface dialog, int id) {
-		                	   Toast.makeText(getActivity(), "I'm not hungry.", Toast.LENGTH_SHORT).show();
+		                	   Toast.makeText(getActivity(), R.string.not_hungry, Toast.LENGTH_SHORT).show();
 		                   }
 		               })
 		               .setCancelable(false)
